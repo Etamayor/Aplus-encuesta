@@ -4,7 +4,7 @@ const fs = require('fs');
 const xmlbuilder = require('xmlbuilder');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -31,10 +31,10 @@ app.post('/enviar', (req, res) => {
 
   fs.appendFile('respuestas.xml', xml + '\n\n', err => {
     if (err) return res.status(500).send('Error al guardar');
-    res.send('<h2>Formulario enviado</h2><a href="/">Volver</a>');
+    res.send('<h2>Formulario enviado correctamente</h2><a href="/">Volver</a>');
   });
 });
 
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`Servidor activo en puerto ${PORT}`);
 });

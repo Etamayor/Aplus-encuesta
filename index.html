@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Formato de Actualización</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
@@ -12,7 +12,6 @@
       <label>Código Cliente:
         <input type="text" name="codigo" required>
       </label>
-
       <label>Tipo de persona:
         <select name="tipo_persona" required>
           <option value="">Seleccione</option>
@@ -20,65 +19,48 @@
           <option value="Jurídica">Jurídica</option>
         </select>
       </label>
-
       <label>Tipo de documento:
         <select name="tipo_documento" required>
           <option value="">Seleccione</option>
-          <option value="C">C - Cédula de Ciudadanía</option>
-          <option value="DIE">DIE - Doc. de Identificación Extranjera</option>
-          <option value="N">N - Número de Identificación Tributaria</option>
-          <option value="P">P - Pasaporte</option>
-          <option value="RC">R.C. - Registro Civil</option>
-          <option value="TE">T.E. - Tarjeta de Extranjería</option>
-          <option value="TI">T.I. - Tarjeta de Identidad</option>
+          <option value="C">C - Cédula</option>
+          <option value="N">N - NIT</option>
+          <option value="TI">T.I.</option>
         </select>
       </label>
-
       <label>Número de documento:
         <input type="text" name="numero_documento" required>
       </label>
-
       <label>Dígito de verificación:
         <input type="text" name="digito">
       </label>
-
-      <label>Razón social (solo jurídica):
+      <label>Razón social:
         <input type="text" name="razon_social">
       </label>
-
       <label>Nombre del establecimiento:
         <input type="text" name="nombre_establecimiento" required>
       </label>
-
-      <label>Celular del establecimiento:
+      <label>Celular:
         <input type="text" name="celular" required>
       </label>
-
-      <label>WhatsApp del establecimiento:
+      <label>WhatsApp:
         <input type="text" name="whatsapp">
       </label>
-
       <label>Dirección:
         <input type="text" name="direccion" required>
       </label>
-
       <label>Barrio:
         <input type="text" name="barrio">
       </label>
-
       <label>Estrato:
         <input type="text" name="estrato">
       </label>
-
-      <label>Teléfono y WhatsApp del propietario:
+      <label>Teléfono del propietario:
         <input type="text" name="telefono_propietario">
       </label>
-
       <label>
-        <input type="checkbox" name="politica" required />
-        He leído y acepto la <a href="https://pdfhost.io/v/2fJeWqA6z6_Politica_tratamiento_de_datos_APLUS_COMERCIALIZADORA" target="https://pdfhost.io/v/2fJeWqA6z6_Politica_tratamiento_de_datos_APLUS_COMERCIALIZADORA">política de privacidad</a>.
+        <input type="checkbox" name="politica" required>
+        He leído y acepto la <a href="https://ejemplo.com/politica" target="_blank">política de privacidad</a>.
       </label>
-
       <input type="submit" value="Enviar">
     </form>
   </div>

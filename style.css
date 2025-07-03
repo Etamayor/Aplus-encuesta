@@ -26,10 +26,6 @@ form label {
   font-weight: 500;
 }
 
-form label input[type="checkbox"] {
-  margin-right: 0.5rem;
-}
-
 input[type="text"],
 select {
   width: 100%;
